@@ -44,16 +44,16 @@ async function main(){
           await sample.click()
           await page.bringToFront()
         }
-        if(i<5){await page.locator('.pager .primary').click();await page.waitForURL('**#'+['questions','evidence','retest','package','contact'][i])}
+        if(i<5){await page.locator('.pager .primary').click();await page.waitForURL(url=>url.hash==='#'+['questions','evidence','retest','package','contact'][i])}
       }
       await page.locator('#consult').click()
       await page.locator('#copy').click()
       await page.waitForFunction(()=>document.querySelector('#copy-status').textContent.includes('コピーしました'))
       assert.match(await page.evaluate(()=>navigator.clipboard.readText()),/回答期限/)
       await page.locator('a[href="#monitoring"]').click()
-      await page.waitForURL('**#monitoring')
+      await page.waitForURL(url=>url.hash==='#monitoring')
       await page.locator('.pager .back').click()
-      await page.waitForURL('**#contact')
+      await page.waitForURL(url=>url.hash==='#contact')
       await page.reload()
       assert.equal(await page.locator('h2').innerText(),'自社の質問票で相談する')
       for(const event of ['demo_start','evidence_open','retest_open','sample_download','contact_click','reply_copy']){

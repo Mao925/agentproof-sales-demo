@@ -1,0 +1,26 @@
+name: Record isolated model trials
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --index-url https://download.pytorch.org/whl/cpu torch==2.7.1
+      - run: pip install transformers==4.53.3
+      - run: python scripts/model-check.py
+        env:
+          HF_HUB_DISABLE_XET: '1'
+          HF_HUB_DISABLE_TELEMETRY: '1'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: isolated-model-trials
+          path: model-runs.json

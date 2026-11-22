@@ -1,0 +1,22 @@
+name: Prepare Japanese demo typeface
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  subset:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p review
+          curl --fail --silent --show-error -g -L 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosansjp/NotoSansJP%5Bwght%5D.ttf' -o /tmp/japanese.ttf
+          curl --fail --silent --show-error -L 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosansjp/OFL.txt' -o review/font-license.txt
+          pip install fonttools brotli
+          cat docs/*.js docs/*.html docs/*.json scripts/model-check.py > /tmp/demo-characters.txt
+          pyftsubset /tmp/japanese.ttf --text-file=/tmp/demo-characters.txt --unicodes='U+0020-007E,U+3000-30FF,U+FF01-FF60' --flavor=woff2 --output-file=review/demo-jp.woff2
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add review/demo-jp.woff2 review/font-license.txt
+          git commit -m 'Prepare OFL-licensed Japanese font fallback for demo text'
+          git push origin "HEAD:refs/heads/typeface-${GITHUB_RUN_ID}"

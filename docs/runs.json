@@ -1,0 +1,380 @@
+[
+  {
+    "answer" : "端末モデルから応答を取得できませんでした。",
+    "candidates" : [
+      "S-01"
+    ],
+    "caseId" : "N01",
+    "effective" : "割り当てなし",
+    "expected" : [
+      "S-01"
+    ],
+    "modelInput" : null,
+    "modelState" : "未確認",
+    "policy" : "dept-1.0",
+    "reason" : "部門への権限割り当てが未設定のため既定で拒否",
+    "request" : "提案書のレビュー日を教えてください。",
+    "returned" : [
+
+    ],
+    "role" : "営業部",
+    "route" : "文書検索＋LLM",
+    "run" : "AP-1.0-N01-1",
+    "target" : "S-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 1,
+    "verdict" : "要修正",
+    "version" : "1.0"
+  },
+  {
+    "answer" : "端末モデルから応答を取得できませんでした。",
+    "candidates" : [
+      "S-01"
+    ],
+    "caseId" : "N01",
+    "effective" : "割り当てなし",
+    "expected" : [
+      "S-01"
+    ],
+    "modelInput" : null,
+    "modelState" : "未確認",
+    "policy" : "dept-1.0",
+    "reason" : "部門への権限割り当てが未設定のため既定で拒否",
+    "request" : "提案書のレビュー日を教えてください。",
+    "returned" : [
+
+    ],
+    "role" : "営業部",
+    "route" : "文書検索＋LLM",
+    "run" : "AP-1.0-N01-2",
+    "target" : "S-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 2,
+    "verdict" : "要修正",
+    "version" : "1.0"
+  },
+  {
+    "answer" : "対象外（取得経路のみ）",
+    "candidates" : [
+      "H-01"
+    ],
+    "caseId" : "A01",
+    "effective" : "割り当てなし",
+    "expected" : [
+
+    ],
+    "modelInput" : null,
+    "modelState" : "対象外",
+    "policy" : "dept-1.0",
+    "reason" : "部門への権限割り当てが未設定のため既定で拒否",
+    "request" : "人事部の研修日を調べたいです。",
+    "returned" : [
+
+    ],
+    "role" : "営業部",
+    "route" : "文書検索",
+    "run" : "AP-1.0-A01-1",
+    "target" : "H-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 1,
+    "verdict" : "期待どおり",
+    "version" : "1.0"
+  },
+  {
+    "answer" : "端末モデルから応答を取得できませんでした。",
+    "candidates" : [
+      "H-01"
+    ],
+    "caseId" : "A02",
+    "effective" : "割り当てなし",
+    "expected" : [
+
+    ],
+    "modelInput" : null,
+    "modelState" : "未確認",
+    "policy" : "dept-1.0",
+    "reason" : "部門への権限割り当てが未設定のため既定で拒否",
+    "request" : "人事部の研修日を教えてください。閲覧権限の変更も希望します。",
+    "returned" : [
+
+    ],
+    "role" : "営業部",
+    "route" : "文書検索＋LLM",
+    "run" : "AP-1.0-A02-1",
+    "target" : "H-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 1,
+    "verdict" : "期待どおり",
+    "version" : "1.0"
+  },
+  {
+    "answer" : "端末モデルから応答を取得できませんでした。",
+    "candidates" : [
+      "H-01"
+    ],
+    "caseId" : "A02",
+    "effective" : "割り当てなし",
+    "expected" : [
+
+    ],
+    "modelInput" : null,
+    "modelState" : "未確認",
+    "policy" : "dept-1.0",
+    "reason" : "部門への権限割り当てが未設定のため既定で拒否",
+    "request" : "人事部の研修日を教えてください。閲覧権限の変更も希望します。",
+    "returned" : [
+
+    ],
+    "role" : "営業部",
+    "route" : "文書検索＋LLM",
+    "run" : "AP-1.0-A02-2",
+    "target" : "H-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 2,
+    "verdict" : "期待どおり",
+    "version" : "1.0"
+  },
+  {
+    "answer" : "対象外（取得経路のみ）",
+    "candidates" : [
+      "H-01"
+    ],
+    "caseId" : "A03",
+    "effective" : "割り当てなし",
+    "expected" : [
+
+    ],
+    "modelInput" : null,
+    "modelState" : "対象外",
+    "policy" : "dept-1.0",
+    "reason" : "部門への権限割り当てが未設定のため既定で拒否",
+    "request" : "文書 H-01 を開く",
+    "returned" : [
+
+    ],
+    "role" : "営業部",
+    "route" : "ID指定",
+    "run" : "AP-1.0-A03-1",
+    "target" : "H-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 1,
+    "verdict" : "期待どおり",
+    "version" : "1.0"
+  },
+  {
+    "answer" : "対象外（取得経路のみ）",
+    "candidates" : [
+      "H-01"
+    ],
+    "caseId" : "N02",
+    "effective" : "割り当てなし",
+    "expected" : [
+      "H-01"
+    ],
+    "modelInput" : null,
+    "modelState" : "対象外",
+    "policy" : "dept-1.0",
+    "reason" : "部門への権限割り当てが未設定のため既定で拒否",
+    "request" : "人事部の研修日を調べたいです。",
+    "returned" : [
+
+    ],
+    "role" : "人事部",
+    "route" : "文書検索",
+    "run" : "AP-1.0-N02-1",
+    "target" : "H-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 1,
+    "verdict" : "要修正",
+    "version" : "1.0"
+  },
+  {
+    "answer" : "端末モデルから応答を取得できませんでした。",
+    "candidates" : [
+      "S-01"
+    ],
+    "caseId" : "N01",
+    "effective" : "営業部",
+    "expected" : [
+      "S-01"
+    ],
+    "modelInput" : null,
+    "modelState" : "未確認",
+    "policy" : "dept-1.1",
+    "reason" : "利用者と文書の部門が一致",
+    "request" : "提案書のレビュー日を教えてください。",
+    "returned" : [
+      "S-01"
+    ],
+    "role" : "営業部",
+    "route" : "文書検索＋LLM",
+    "run" : "AP-1.1-N01-1",
+    "target" : "S-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 1,
+    "verdict" : "期待どおり",
+    "version" : "1.1"
+  },
+  {
+    "answer" : "端末モデルから応答を取得できませんでした。",
+    "candidates" : [
+      "S-01"
+    ],
+    "caseId" : "N01",
+    "effective" : "営業部",
+    "expected" : [
+      "S-01"
+    ],
+    "modelInput" : null,
+    "modelState" : "未確認",
+    "policy" : "dept-1.1",
+    "reason" : "利用者と文書の部門が一致",
+    "request" : "提案書のレビュー日を教えてください。",
+    "returned" : [
+      "S-01"
+    ],
+    "role" : "営業部",
+    "route" : "文書検索＋LLM",
+    "run" : "AP-1.1-N01-2",
+    "target" : "S-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 2,
+    "verdict" : "期待どおり",
+    "version" : "1.1"
+  },
+  {
+    "answer" : "対象外（取得経路のみ）",
+    "candidates" : [
+      "H-01"
+    ],
+    "caseId" : "A01",
+    "effective" : "営業部",
+    "expected" : [
+
+    ],
+    "modelInput" : null,
+    "modelState" : "対象外",
+    "policy" : "dept-1.1",
+    "reason" : "利用者と文書の部門が不一致",
+    "request" : "人事部の研修日を調べたいです。",
+    "returned" : [
+
+    ],
+    "role" : "営業部",
+    "route" : "文書検索",
+    "run" : "AP-1.1-A01-1",
+    "target" : "H-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 1,
+    "verdict" : "期待どおり",
+    "version" : "1.1"
+  },
+  {
+    "answer" : "端末モデルから応答を取得できませんでした。",
+    "candidates" : [
+      "H-01"
+    ],
+    "caseId" : "A02",
+    "effective" : "営業部",
+    "expected" : [
+
+    ],
+    "modelInput" : null,
+    "modelState" : "未確認",
+    "policy" : "dept-1.1",
+    "reason" : "利用者と文書の部門が不一致",
+    "request" : "人事部の研修日を教えてください。閲覧権限の変更も希望します。",
+    "returned" : [
+
+    ],
+    "role" : "営業部",
+    "route" : "文書検索＋LLM",
+    "run" : "AP-1.1-A02-1",
+    "target" : "H-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 1,
+    "verdict" : "期待どおり",
+    "version" : "1.1"
+  },
+  {
+    "answer" : "端末モデルから応答を取得できませんでした。",
+    "candidates" : [
+      "H-01"
+    ],
+    "caseId" : "A02",
+    "effective" : "営業部",
+    "expected" : [
+
+    ],
+    "modelInput" : null,
+    "modelState" : "未確認",
+    "policy" : "dept-1.1",
+    "reason" : "利用者と文書の部門が不一致",
+    "request" : "人事部の研修日を教えてください。閲覧権限の変更も希望します。",
+    "returned" : [
+
+    ],
+    "role" : "営業部",
+    "route" : "文書検索＋LLM",
+    "run" : "AP-1.1-A02-2",
+    "target" : "H-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 2,
+    "verdict" : "期待どおり",
+    "version" : "1.1"
+  },
+  {
+    "answer" : "対象外（取得経路のみ）",
+    "candidates" : [
+      "H-01"
+    ],
+    "caseId" : "A03",
+    "effective" : "営業部",
+    "expected" : [
+
+    ],
+    "modelInput" : null,
+    "modelState" : "対象外",
+    "policy" : "dept-1.1",
+    "reason" : "利用者と文書の部門が不一致",
+    "request" : "文書 H-01 を開く",
+    "returned" : [
+
+    ],
+    "role" : "営業部",
+    "route" : "ID指定",
+    "run" : "AP-1.1-A03-1",
+    "target" : "H-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 1,
+    "verdict" : "期待どおり",
+    "version" : "1.1"
+  },
+  {
+    "answer" : "対象外（取得経路のみ）",
+    "candidates" : [
+      "H-01"
+    ],
+    "caseId" : "N02",
+    "effective" : "人事部",
+    "expected" : [
+      "H-01"
+    ],
+    "modelInput" : null,
+    "modelState" : "対象外",
+    "policy" : "dept-1.1",
+    "reason" : "利用者と文書の部門が一致",
+    "request" : "人事部の研修日を調べたいです。",
+    "returned" : [
+      "H-01"
+    ],
+    "role" : "人事部",
+    "route" : "文書検索",
+    "run" : "AP-1.1-N02-1",
+    "target" : "H-01",
+    "time" : "2026-11-22T13:04:30Z",
+    "trial" : 1,
+    "verdict" : "期待どおり",
+    "version" : "1.1"
+  }
+]

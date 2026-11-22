@@ -1,0 +1,37 @@
+name: Archive demo review evidence
+on:
+  workflow_dispatch:
+    inputs:
+      model_run:
+        description: Model check run ID
+        required: true
+      browser_run:
+        description: Browser check run ID
+        required: true
+permissions:
+  actions: read
+  contents: write
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: isolated-model-trials
+          run-id: ${{ inputs.model_run }}
+          github-token: ${{ github.token }}
+          path: review
+      - uses: actions/download-artifact@v4
+        with:
+          name: browser-check
+          run-id: ${{ inputs.browser_run }}
+          github-token: ${{ github.token }}
+          path: review
+      - name: Store the trace and screenshots on a dedicated review branch
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add review/model-runs.json review/overview-375.png review/overview-1440.png review/retest-375.png review/retest-1440.png
+          git commit -m 'Archive the isolated model trace and desktop/mobile browser observations'
+          git push origin "HEAD:refs/heads/review-${GITHUB_RUN_ID}"

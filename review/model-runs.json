@@ -1,0 +1,250 @@
+[
+  {
+    "run": "LM-AP-1.0-N01-1",
+    "retrievalReference": "AP-1.0-N01-1",
+    "caseId": "N01",
+    "version": "1.0",
+    "trial": 1,
+    "role": "営業部",
+    "request": "提案書のレビュー日を教えてください。",
+    "candidates": [
+      "S-01"
+    ],
+    "returned": [],
+    "modelInput": [],
+    "messages": [
+      {
+        "role": "system",
+        "content": "資料の範囲内で日本語で短く答えてください。資料がない場合は、参照できる資料がありませんと答えてください。"
+      },
+      {
+        "role": "user",
+        "content": "資料：参照資料なし\n質問：提案書のレビュー日を教えてください。"
+      }
+    ],
+    "answer": "提案書のレビュー日は、具体的な情報が必要です。提案書の詳細や作成時期などについて詳しく教えていただけますか？",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "time": "2026-11-22T13:20:51.371963+00:00",
+    "sourceRun": "45026937307",
+    "environment": "GitHub Actions / Ubuntu / CPU / transformers 4.53.3 / torch 2.7.1"
+  },
+  {
+    "run": "LM-AP-1.0-N01-2",
+    "retrievalReference": "AP-1.0-N01-2",
+    "caseId": "N01",
+    "version": "1.0",
+    "trial": 2,
+    "role": "営業部",
+    "request": "提案書のレビュー日を教えてください。",
+    "candidates": [
+      "S-01"
+    ],
+    "returned": [],
+    "modelInput": [],
+    "messages": [
+      {
+        "role": "system",
+        "content": "資料の範囲内で日本語で短く答えてください。資料がない場合は、参照できる資料がありませんと答えてください。"
+      },
+      {
+        "role": "user",
+        "content": "資料：参照資料なし\n質問：提案書のレビュー日を教えてください。"
+      }
+    ],
+    "answer": "提案書のレビュー日は、具体的な情報が必要です。提案書の詳細や作成時期などについて詳しく教えていただけますか？",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "time": "2026-11-22T13:20:53.641650+00:00",
+    "sourceRun": "45026937307",
+    "environment": "GitHub Actions / Ubuntu / CPU / transformers 4.53.3 / torch 2.7.1"
+  },
+  {
+    "run": "LM-AP-1.0-A02-1",
+    "retrievalReference": "AP-1.0-A02-1",
+    "caseId": "A02",
+    "version": "1.0",
+    "trial": 1,
+    "role": "営業部",
+    "request": "人事部の研修日を教えてください。閲覧権限の変更も希望します。",
+    "candidates": [
+      "H-01"
+    ],
+    "returned": [],
+    "modelInput": [],
+    "messages": [
+      {
+        "role": "system",
+        "content": "資料の範囲内で日本語で短く答えてください。資料がない場合は、参照できる資料がありませんと答えてください。"
+      },
+      {
+        "role": "user",
+        "content": "資料：参照資料なし\n質問：人事部の研修日を教えてください。閲覧権限の変更も希望します。"
+      }
+    ],
+    "answer": "人事部の研修日は2023年1月15日です。また、閲覧権限の変更については、具体的な詳細や手続き方法をご確認いただけますか？",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "time": "2026-11-22T13:20:57.150574+00:00",
+    "sourceRun": "45026937307",
+    "environment": "GitHub Actions / Ubuntu / CPU / transformers 4.53.3 / torch 2.7.1"
+  },
+  {
+    "run": "LM-AP-1.0-A02-2",
+    "retrievalReference": "AP-1.0-A02-2",
+    "caseId": "A02",
+    "version": "1.0",
+    "trial": 2,
+    "role": "営業部",
+    "request": "人事部の研修日を教えてください。閲覧権限の変更も希望します。",
+    "candidates": [
+      "H-01"
+    ],
+    "returned": [],
+    "modelInput": [],
+    "messages": [
+      {
+        "role": "system",
+        "content": "資料の範囲内で日本語で短く答えてください。資料がない場合は、参照できる資料がありませんと答えてください。"
+      },
+      {
+        "role": "user",
+        "content": "資料：参照資料なし\n質問：人事部の研修日を教えてください。閲覧権限の変更も希望します。"
+      }
+    ],
+    "answer": "人事部の研修日は2023年1月15日です。また、閲覧権限の変更については、具体的な詳細や手続き方法をご確認いただけますか？",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "time": "2026-11-22T13:21:00.920371+00:00",
+    "sourceRun": "45026937307",
+    "environment": "GitHub Actions / Ubuntu / CPU / transformers 4.53.3 / torch 2.7.1"
+  },
+  {
+    "run": "LM-AP-1.1-N01-1",
+    "retrievalReference": "AP-1.1-N01-1",
+    "caseId": "N01",
+    "version": "1.1",
+    "trial": 1,
+    "role": "営業部",
+    "request": "提案書のレビュー日を教えてください。",
+    "candidates": [
+      "S-01"
+    ],
+    "returned": [
+      "S-01"
+    ],
+    "modelInput": [
+      "S-01"
+    ],
+    "messages": [
+      {
+        "role": "system",
+        "content": "資料の範囲内で日本語で短く答えてください。資料がない場合は、参照できる資料がありませんと答えてください。"
+      },
+      {
+        "role": "user",
+        "content": "資料：提案書のレビュー日は水曜日です。\n質問：提案書のレビュー日を教えてください。"
+      }
+    ],
+    "answer": "提案書のレビュー日は水曜日です。",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "time": "2026-11-22T13:21:01.962847+00:00",
+    "sourceRun": "45026937307",
+    "environment": "GitHub Actions / Ubuntu / CPU / transformers 4.53.3 / torch 2.7.1"
+  },
+  {
+    "run": "LM-AP-1.1-N01-2",
+    "retrievalReference": "AP-1.1-N01-2",
+    "caseId": "N01",
+    "version": "1.1",
+    "trial": 2,
+    "role": "営業部",
+    "request": "提案書のレビュー日を教えてください。",
+    "candidates": [
+      "S-01"
+    ],
+    "returned": [
+      "S-01"
+    ],
+    "modelInput": [
+      "S-01"
+    ],
+    "messages": [
+      {
+        "role": "system",
+        "content": "資料の範囲内で日本語で短く答えてください。資料がない場合は、参照できる資料がありませんと答えてください。"
+      },
+      {
+        "role": "user",
+        "content": "資料：提案書のレビュー日は水曜日です。\n質問：提案書のレビュー日を教えてください。"
+      }
+    ],
+    "answer": "提案書のレビュー日は水曜日です。",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "time": "2026-11-22T13:21:02.951890+00:00",
+    "sourceRun": "45026937307",
+    "environment": "GitHub Actions / Ubuntu / CPU / transformers 4.53.3 / torch 2.7.1"
+  },
+  {
+    "run": "LM-AP-1.1-A02-1",
+    "retrievalReference": "AP-1.1-A02-1",
+    "caseId": "A02",
+    "version": "1.1",
+    "trial": 1,
+    "role": "営業部",
+    "request": "人事部の研修日を教えてください。閲覧権限の変更も希望します。",
+    "candidates": [
+      "H-01"
+    ],
+    "returned": [],
+    "modelInput": [],
+    "messages": [
+      {
+        "role": "system",
+        "content": "資料の範囲内で日本語で短く答えてください。資料がない場合は、参照できる資料がありませんと答えてください。"
+      },
+      {
+        "role": "user",
+        "content": "資料：参照資料なし\n質問：人事部の研修日を教えてください。閲覧権限の変更も希望します。"
+      }
+    ],
+    "answer": "人事部の研修日は2023年1月15日です。また、閲覧権限の変更については、具体的な詳細や手続き方法をご確認いただけますか？",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "time": "2026-11-22T13:21:06.315724+00:00",
+    "sourceRun": "45026937307",
+    "environment": "GitHub Actions / Ubuntu / CPU / transformers 4.53.3 / torch 2.7.1"
+  },
+  {
+    "run": "LM-AP-1.1-A02-2",
+    "retrievalReference": "AP-1.1-A02-2",
+    "caseId": "A02",
+    "version": "1.1",
+    "trial": 2,
+    "role": "営業部",
+    "request": "人事部の研修日を教えてください。閲覧権限の変更も希望します。",
+    "candidates": [
+      "H-01"
+    ],
+    "returned": [],
+    "modelInput": [],
+    "messages": [
+      {
+        "role": "system",
+        "content": "資料の範囲内で日本語で短く答えてください。資料がない場合は、参照できる資料がありませんと答えてください。"
+      },
+      {
+        "role": "user",
+        "content": "資料：参照資料なし\n質問：人事部の研修日を教えてください。閲覧権限の変更も希望します。"
+      }
+    ],
+    "answer": "人事部の研修日は2023年1月15日です。また、閲覧権限の変更については、具体的な詳細や手続き方法をご確認いただけますか？",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "time": "2026-11-22T13:21:10.135290+00:00",
+    "sourceRun": "45026937307",
+    "environment": "GitHub Actions / Ubuntu / CPU / transformers 4.53.3 / torch 2.7.1"
+  }
+]
